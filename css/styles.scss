@@ -1,0 +1,180 @@
+@import '../layout/header';
+@import '../layout/common';
+@import '../layout/footer';
+@import '../layout/variable';
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px/20px "Jost", sans-serif;
+  color: #231f20;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+.container {
+  max-width: 1283px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+h1,
+.h1{
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 40px;
+  @media screen and (min-width:768px){
+     font-size: 50px;
+     line-height: 65px;
+  }
+  
+}
+h2{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 65px;
+  @media screen and (min-width:768px) {
+    font-size: 40px;
+  }
+}
+h3{
+  font-size: 18px;
+  font-weight: 700;
+  @media screen and (min-width:768px) {
+    font-size: 34px;
+  }
+}
+h4{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 43px;
+  @media screen and (min-width:576px) {
+    font-size: 22px;
+  }
+  @media screen and (min-width:576px) {
+    font-size: 30px;
+  }
+}
+h5{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  @media screen and (min-width:576px){
+    font-size: 20px;
+  
+ }
+ @media screen and (min-width:768px){
+  font-size: 26px;
+  line-height: 38px;
+}
+}
+h6{
+  font-size: 14px;
+  font-weight: 500;
+  @media screen and (min-width:768px) {
+    font-size: 20px;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  textarea {
+    resize: vertical;
+    vertical-align: top;
+  }
+
+  button,
+  input[type='button'],
+  input[type='reset'],
+  input[type='file'],
+  input[type='submit'] {
+    cursor: pointer;
+    border: none;
+  }
+
+  form,
+  fieldset {
+    margin: 0;
+    padding: 0;
+    border-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  .btn{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 12px 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 2px solid transparent;
+    outline: none;
+    box-shadow: none;
+    min-width: 120px;
+    color: #fff;
+    cursor: pointer;
+    &.primary-btn{
+      background-color: $primary;
+      &:hover{
+        border: 2px solid $primary;
+        background-color: #fff;
+        color: #000;
+        transition: all ease-in-out 0.3s;
+      }
+      
+   }
+    
+    
+  }
+  p{
+    font-size: 12px;
+    color:$dark;
+    line-height: 26px;
+    @media screen and (min-width:768px) {
+      font-size: 18px;
+    }
+  }
+  span{
+    color: $primary;
+  }
